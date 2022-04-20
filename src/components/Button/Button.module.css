@@ -1,0 +1,29 @@
+.SellBtn {
+	padding: 15px 45px;
+	background-color: #18425d;
+	outline: none;
+	cursor: pointer;
+	border: none;
+	color: #fff;
+	font-size: 16px;
+}
+
+.ViewBtn {
+	padding: 10px 25px;
+	background-color: #18425d;
+	outline: none;
+	cursor: pointer;
+	border: none;
+	color: #fff;
+	font-size: 15px;
+}
+
+.DeleteBtn {
+	padding: 10px 25px;
+	color: #18425d;
+	outline: none;
+	cursor: pointer;
+	background-color: transparent;
+	border: 1px solid #18425d;
+	font-size: 15px;
+}
