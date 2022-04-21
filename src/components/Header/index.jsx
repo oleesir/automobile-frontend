@@ -29,6 +29,12 @@ const Header = () => {
 					Back
 				</Button>
 			)}
+
+			{location.pathname === "/view_advert" && (
+				<Button btnTypes="SellBtn" type="button" onClick={navigateBack}>
+					Back
+				</Button>
+			)}
 		</div>
 	);
 };
