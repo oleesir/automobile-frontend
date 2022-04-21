@@ -8,6 +8,16 @@
 	font-size: 16px;
 }
 
+.SubmitBtn {
+	padding: 15px 45px;
+	background-color: #18425d;
+	outline: none;
+	cursor: pointer;
+	border: none;
+	color: #fff;
+	font-size: 16px;
+}
+
 .ViewBtn {
 	padding: 10px 25px;
 	background-color: #18425d;
