@@ -1,13 +1,13 @@
 import React from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Button from "../../Button/index.jsx";
 import styles from "./Card.module.css";
 
-const Card = ({ photo, brand, description, price, openModal }) => {
+const Card = ({ photo, brand, description, price, openModal, cardId }) => {
 	const navigate = useNavigate();
 
 	const navigateToAdvert = () => {
-		navigate("/view_advert");
+		navigate(`/view_advert/${cardId}`, { state: cardId });
 	};
 
 	return (
