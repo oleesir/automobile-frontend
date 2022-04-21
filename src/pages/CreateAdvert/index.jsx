@@ -38,7 +38,7 @@ const CreateAdvert = () => {
 
 		formState: { errors },
 	} = useForm({ resolver: yupResolver(schema) });
-	const baseURL = "http://localhost:3001/api/v1";
+	const baseURL = process.env.REACT_APP_API_URL;
 	const imgWrapperRef = useRef(null);
 	const navigate = useNavigate();
 

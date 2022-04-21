@@ -12,7 +12,7 @@ const LandingPage = () => {
 	const [loading, setLoading] = useState(true);
 	const [selectedCard, setSelectedCard] = useState(null);
 
-	const baseURL = "http://localhost:3001/api/v1";
+	const baseURL = process.env.REACT_APP_API_URL;
 
 	const api = axios.create({ baseURL: baseURL });
 

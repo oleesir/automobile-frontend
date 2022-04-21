@@ -6,7 +6,7 @@ import axios from "axios";
 import styles from "./SingleAdvert.module.css";
 
 const SingleAdvert = () => {
-	const baseURL = "http://localhost:3001/api/v1";
+	const baseURL = process.env.REACT_APP_API_URL;
 	const api = axios.create({ baseURL: baseURL });
 	const [advert, setAdvert] = useState(null);
 	const [loading, setLoading] = useState(true);
@@ -61,7 +61,7 @@ const SingleAdvert = () => {
 						<div className={styles.bodyContent}>
 							<h3 className={styles.model}>Model: {advert?.model}</h3>
 							<h3 className={styles.name}>Seller: {advert?.sellerName}</h3>
-							<h3 className={styles.phoneNumber}>Phone number: {advert?.sellerNumber}</h3>
+							<h3 className={styles.phoneNumber}>Phone number: {advert?.phoneNumber}</h3>
 							<p className={styles.description}>{advert?.description}</p>
 						</div>
 
