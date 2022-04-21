@@ -18,6 +18,11 @@
 	font-size: 16px;
 }
 
+.SubmitBtn:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
 .ViewBtn {
 	padding: 10px 25px;
 	background-color: #18425d;
