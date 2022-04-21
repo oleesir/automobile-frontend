@@ -1,0 +1,66 @@
+.bodyWrapper {
+	width: 100%;
+	padding: 30px 100px;
+	display: flex;
+	justify-content: center;
+}
+
+.content {
+	width: 60%;
+}
+
+.pic {
+	width: 250px;
+	height: 200px;
+	margin-bottom: 10px;
+}
+
+.uploadBtnHidden {
+	margin-top: 20px;
+}
+
+.uploadBtn {
+	background-color: #072f40;
+	color: white;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.inputFieldContent {
+	margin-bottom: 25px;
+}
+
+.InputField {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0 0 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	outline: none;
+	border-radius: 4px;
+}
+
+.TextArea {
+	width: 100%;
+	padding: 12px;
+	height: 100px;
+	line-height: 1.6;
+	margin: 8px 0 0 0;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	resize: none;
+	outline: none;
+}
+
+.BtnField {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 50px;
+}
+
+.errorMessage {
+	font-size: 12px;
+	color: crimson;
+}
