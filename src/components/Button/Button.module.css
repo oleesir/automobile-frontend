@@ -37,3 +37,25 @@
 	border: 1px solid #18425d;
 	font-size: 15px;
 }
+
+.NoBtn {
+	padding-top: 15.2px;
+	padding-left: 71.5px;
+	padding-bottom: 10.8px;
+	padding-right: 78.5px;
+	cursor: pointer;
+	outline: none;
+	border: none;
+}
+
+.YesBtn {
+	padding-top: 15.5px;
+	padding-left: 48.5px;
+	padding-bottom: 11.5px;
+	padding-right: 55.5px;
+	background-color: rgba(238, 29, 89, 0.1);
+	cursor: pointer;
+	color: #ee1d59;
+	outline: none;
+	border: none;
+}
