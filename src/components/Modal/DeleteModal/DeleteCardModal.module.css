@@ -1,0 +1,40 @@
+.deleteContainer {
+	display: flex;
+	width: 100%;
+	top: 21%;
+	position: fixed;
+	justify-content: center;
+	align-items: center;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.deleteContent {
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	padding-top: 47.25px;
+	align-items: center;
+	justify-content: center;
+}
+
+.hiddenDigits {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.hiddenSpace {
+	margin-right: 3px;
+}
+
+.decision {
+	display: flex;
+	margin-top: 20px;
+	border-top: 0.5px solid rgba(203, 212, 194, 0.3746);
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+}

@@ -3,7 +3,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import Button from "../../Button/index.jsx";
 import styles from "./Card.module.css";
 
-const Card = () => {
+const Card = ({ photo, brand, description, price, openModal }) => {
 	const navigate = useNavigate();
 
 	const navigateToAdvert = () => {
@@ -14,19 +14,19 @@ const Card = () => {
 		<div className={styles.wrapper}>
 			<div className={styles.wrapperContent}>
 				<div>
-					<img src="/mustang_two.jpeg" alt="img" className={styles.pic} />
+					<img src={photo} alt="img" className={styles.pic} />
 				</div>
 				<div className={styles.body}>
 					<div className={styles.priceContent}>
-						<p className={styles.price}>N25,000,000</p>
+						<p className={styles.price}>{price}</p>
 					</div>
 					<div className={styles.nameContent}>
-						<h4 className={styles.name}>Mustang</h4> <span className={styles.status}>New</span>
+						<h4 className={styles.name}>{brand}</h4>
 					</div>
 					<div className={styles.descriptionContent}>
 						<p className={styles.description}>
-							It is a long established fact that a reader will be distracted by the readable content of a page when
-							looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+							{description.length > 69 ? description.slice(0, 69) : description}
+							{description.length >= 39 && "..."}
 						</p>
 					</div>
 
@@ -34,7 +34,7 @@ const Card = () => {
 						<Button btnTypes="ViewBtn" type="button" onClick={navigateToAdvert}>
 							View
 						</Button>
-						<Button btnTypes="DeleteBtn" type="button">
+						<Button btnTypes="DeleteBtn" type="button" onClick={openModal}>
 							Delete
 						</Button>
 					</div>
