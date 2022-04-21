@@ -2,26 +2,27 @@ import React from "react";
 import Card from "./Card";
 import styles from "./Cards.module.css";
 
-const Cards = ({ cars, openModal }) => {
+const Cards = ({ adverts, openModal }) => {
 	return (
 		<>
-			{cars.length === 0 && (
+			{adverts.length === 0 && (
 				<div className={styles.wrapper}>
 					<h1>CLICK ON THE BUTTON TO START SELLING</h1>
 				</div>
 			)}
-			{cars.length > 0 && (
+			{adverts.length > 0 && (
 				<>
-					{cars.map((car) => (
+					{adverts.map((advert) => (
 						<Card
-							photo={car?.photo}
-							brand={car?.brand}
-							description={car?.description}
-							price={car?.price}
+							cardId={advert?._id}
+							photo={advert?.photo}
+							brand={advert?.brand}
+							description={advert?.description}
+							price={advert?.price}
 							openModal={() => {
-								openModal(car);
+								openModal(advert);
 							}}
-							key={car?._id}
+							key={advert?._id}
 						/>
 					))}
 				</>

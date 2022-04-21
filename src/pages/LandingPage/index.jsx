@@ -7,7 +7,7 @@ import Cards from "../../components/Cards";
 import styles from "./LandingPage.module.css";
 
 const LandingPage = () => {
-	const [cars, setCars] = useState([]);
+	const [adverts, setAdverts] = useState([]);
 	const [showModal, setShowModal] = useState(false);
 	const [loading, setLoading] = useState(true);
 	const [selectedCard, setSelectedCard] = useState(null);
@@ -28,7 +28,7 @@ const LandingPage = () => {
 	const getAllAdvert = async () => {
 		try {
 			const res = await api.get(`/adverts`);
-			setCars(res.data.data);
+			setAdverts(res.data.data);
 		} catch (error) {
 			console.log(error);
 		}
@@ -63,7 +63,7 @@ const LandingPage = () => {
 			{loading && <Loader loaderTypes="WhiteBackground" />}
 			{!loading && (
 				<div className={styles.bodyWrapper}>
-					<Cards cars={cars} openModal={openModal} />
+					<Cards adverts={adverts} openModal={openModal} />
 				</div>
 			)}
 

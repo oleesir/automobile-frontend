@@ -13,7 +13,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<LandingPage />} />
 					<Route path="/new_advert" element={<CreateAdvert />} />
-					<Route path="/view_advert" element={<SingleAdvert />} />
+					<Route path="/view_advert/:id" element={<SingleAdvert />} />
 				</Routes>
 			</Router>
 		</div>
