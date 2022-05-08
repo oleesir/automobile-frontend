@@ -74,9 +74,10 @@ const CreateAdvert = () => {
 	};
 
 	const handleImageChange = async (file) => {
-		console.log(file);
+		console.log("HELLO", file);
 		const input = file.target;
 		const reader = new FileReader();
+		console.log("READER", reader);
 		reader.onload = function () {
 			const dataURL = reader.result;
 			const imageElement = document.createElement("img");
@@ -85,6 +86,8 @@ const CreateAdvert = () => {
 			imageElement.setAttribute("alt", "image");
 			imageElement.setAttribute("className", styles.pic);
 			imgWrapperRef.current.appendChild(imageElement);
+			console.log("IMAGE ELEMENT", imgWrapperRef);
+			console.log("REF", imgWrapperRef);
 			imageElement.src = dataURL;
 			setValue("photo", dataURL);
 		};
