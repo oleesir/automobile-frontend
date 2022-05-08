@@ -18,7 +18,13 @@ const Card = ({ photo, brand, description, price, openModal, cardId }) => {
 				</div>
 				<div className={styles.body}>
 					<div className={styles.priceContent}>
-						<p className={styles.price}>{price}</p>
+						<p className={styles.price}>
+							{" "}
+							{new Intl.NumberFormat("en-NG", {
+								style: "currency",
+								currency: "NGN",
+							}).format(price)}
+						</p>
 					</div>
 					<div className={styles.nameContent}>
 						<h4 className={styles.name}>{brand}</h4>
